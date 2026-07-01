@@ -1068,7 +1068,7 @@ requires-dist = [
     { name = "jupyterlab", specifier = ">=4.4.0" },
     { name = "matplotlib", specifier = ">=3.9.0" },
     { name = "pandas", specifier = ">=2.2.0" },
-    { name = "polaris-data", specifier = ">=0.8.3" },
+    { name = "polaris-data", specifier = ">=0.8.4" },
 ]
 
 [[package]]
@@ -3360,7 +3360,7 @@ wheels = [
 
 [[package]]
 name = "polaris-data"
-version = "0.8.3"
+version = "0.8.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -3368,9 +3368,9 @@ dependencies = [
     { name = "orjson", version = "3.11.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c9/ac/e54aa640e0d3450b7604164822b634286059cbc3df766ba7377e579f5008/polaris_data-0.8.3.tar.gz", hash = "sha256:32737b67e1d781f1290687fa81a529effc2cd4cca412567a4a7bcc3ebc67e060", size = 61115, upload-time = "2026-06-29T22:02:46.848Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/24/42a164628440a9688e9f15f399bdaebbf7dfae0ab7b708785c1cb8eb79ce/polaris_data-0.8.4.tar.gz", hash = "sha256:5e5a988b81a71fb238e8e4e221fab00ed0e47cac358a201ff89cea0a0576dfcb", size = 62977, upload-time = "2026-07-01T11:10:27.075Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/80/cacb38b04c13761d87b243113d558d4cb9661e79f78e37f5c944912463b1/polaris_data-0.8.3-py3-none-any.whl", hash = "sha256:7f1e563ff048c4d452b799915ca16c6dbb69b249774286566e5abbcd43561627", size = 20689, upload-time = "2026-06-29T22:02:45.659Z" },
+    { url = "https://files.pythonhosted.org/packages/32/fa/28eaf20ac413122686266b50f10e5b8655a4f81b58ed20c980bb527470b0/polaris_data-0.8.4-py3-none-any.whl", hash = "sha256:81a43e8f3b73943eca5237a2aac72ef9dff5826450a116c80be744ce55ecbfb6", size = 21857, upload-time = "2026-07-01T11:10:26.062Z" },
 ]
 
 [[package]]
