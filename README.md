@@ -1,6 +1,6 @@
 # Polaris Data Example Notebooks
 
-This workspace packages a small set of Jupyter notebooks that demonstrate practical `polaris-data` usage against live Polaris market data.
+This workspace packages a Jupyter notebook that demonstrates practical `polaris-data` usage against live Polaris market data.
 
 The examples are meant to show a few core patterns clearly:
 
@@ -24,27 +24,12 @@ A compact single-market walkthrough using Hyperliquid BTC data. It shows the mos
 
 This is the best starting point if someone wants to understand the package API shape quickly.
 
-### [`notebooks/dreamcash_tradexyz_tracking_analysis.ipynb`](notebooks/dreamcash_tradexyz_tracking_analysis.ipynb)
-
-A broader venue-comparison example using a shared ticker basket across `dreamcash` and `tradexyz`.
-
-It demonstrates how to:
-
-- normalize market ids across sources
-- discover the shared universe from the catalog
-- fetch parallel OHLCV series across venues
-- compare overlap, activity, returns, and spread behavior
-- drill back down into raw trades for a focus ticker
-
-This notebook is the better showcase for multi-market and multi-source analysis with `polaris-data`.
-
 ## Repo Layout
 
 ```text
 .
 ├── notebooks/
-│   ├── hyperliquid_btc_trade_analysis.ipynb
-│   └── dreamcash_tradexyz_tracking_analysis.ipynb
+│   └── hyperliquid_btc_trade_analysis.ipynb
 ├── Makefile
 ├── pyproject.toml
 └── uv.lock
