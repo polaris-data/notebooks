@@ -1,12 +1,14 @@
 # Polaris Data Example Notebooks
 
-This workspace packages a Jupyter notebook that demonstrates practical `polaris-data` usage against live Polaris market data.
+This workspace packages Jupyter notebooks that demonstrate practical `polaris-data` usage against live Polaris market data.
 
 The examples are meant to show a few core patterns clearly:
 
 - discovering markets from the Polaris catalog
 - fetching bounded OHLCV windows
 - fetching raw trade streams
+- working with standardized order-book schemas
+- comparing bucketed derived metrics like VWAP and realized volatility
 - turning API responses into Pandas analysis frames
 - building quick visual checks with Matplotlib
 
@@ -24,12 +26,26 @@ A compact single-market walkthrough using Hyperliquid BTC data. It shows the mos
 
 This is the best starting point if someone wants to understand the package API shape quickly.
 
+### [`notebooks/lighter_aapl_standardized_schema_tour.ipynb`](notebooks/lighter_aapl_standardized_schema_tour.ipynb)
+
+A second walkthrough focused on the broader standardized schema API surface using the public `lighter` AAPL perpetual market. It shows how to:
+
+- resolve Lighter's numeric market id from `catalog(...)`
+- select a short recent window with public coverage
+- inspect `events(...)` and `l2_snapshots(...)`
+- track quotes with `bbo(...)`
+- compute bucketed `volume(...)`, `vwap(...)`, and `volatility(...)`
+- handle empty `funding_rates(...)` and `mark_prices(...)` responses without assuming coverage
+
+This is the better reference if someone wants to explore order-book-oriented standardized methods beyond the first trade-and-bar example.
+
 ## Repo Layout
 
 ```text
 .
 ├── notebooks/
-│   └── hyperliquid_btc_trade_analysis.ipynb
+│   ├── hyperliquid_btc_trade_analysis.ipynb
+│   └── lighter_aapl_standardized_schema_tour.ipynb
 ├── Makefile
 ├── pyproject.toml
 └── uv.lock
