@@ -71,4 +71,4 @@ Checks all six documented PropAMM sources, selects a comparable directed token p
 └── uv.lock
 ```
 
-Committed notebooks intentionally have outputs and execution counts cleared. Their live row counts and charts will change as Polaris catalog coverage advances.
+Committed notebooks retain their latest successful execution outputs and embedded charts so they can be reviewed without a local Jupyter environment. Re-running them will refresh row counts and charts as Polaris catalog coverage advances.
