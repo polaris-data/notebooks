@@ -1,6 +1,6 @@
 # Polaris Data Example Notebooks
 
-This repository contains analysis-first Jupyter notebooks for the current `polaris-data` Python SDK. Together, the five notebooks cover every standardized schema documented by Polaris while remaining runnable against the no-key public catalog windows.
+This repository contains analysis-first Jupyter notebooks for the current `polaris-data` Python SDK. Together, the six notebooks cover every standardized schema documented by Polaris while remaining runnable against the no-key public catalog windows.
 
 ## Quickstart
 
@@ -20,6 +20,10 @@ Historical event methods in the current SDK return single-pass iterators by defa
 ### [`notebooks/hyperliquid_btc_trade_analysis.ipynb`](notebooks/hyperliquid_btc_trade_analysis.ipynb)
 
 Uses a short Hyperliquid BTC window to connect one-minute OHLCV bars with typed trades, buy/sell volume, notional, and signed execution flow.
+
+### [`notebooks/hyperliquid_l4_post_trade_analysis.ipynb`](notebooks/hyperliquid_l4_post_trade_analysis.ipynb)
+
+Builds participant-attributed post-trade analytics from raw Hyperliquid BTC events, including buyer/seller wallets, aggressor and passive roles, counterparties, execution cost, and forward midpoint markouts.
 
 ### [`notebooks/lighter_aapl_standardized_schema_tour.ipynb`](notebooks/lighter_aapl_standardized_schema_tour.ipynb)
 
@@ -41,7 +45,7 @@ Checks all six documented PropAMM sources, selects a comparable directed token p
 
 | Polaris schema | Notebook |
 | --- | --- |
-| [Events](https://docs.polaris.supply/schemas/events) | Lighter AAPL schema tour |
+| [Events](https://docs.polaris.supply/schemas/events) | Lighter AAPL schema tour; Hyperliquid L4 post-trade analysis |
 | [Trades](https://docs.polaris.supply/schemas/trades) | Hyperliquid BTC trade analysis |
 | [Intents and RFQs](https://docs.polaris.supply/schemas/intents-and-rfqs) | UniswapX intents and RFQs |
 | [Option tickers](https://docs.polaris.supply/schemas/option-tickers) | Aevo BTC options surface |
@@ -63,6 +67,7 @@ Checks all six documented PropAMM sources, selects a comparable directed token p
 ├── notebooks/
 │   ├── aevo_btc_options_surface_analysis.ipynb
 │   ├── hyperliquid_btc_trade_analysis.ipynb
+│   ├── hyperliquid_l4_post_trade_analysis.ipynb
 │   ├── lighter_aapl_standardized_schema_tour.ipynb
 │   ├── propamm_quote_ladder_analysis.ipynb
 │   └── uniswapx_intents_and_rfqs_analysis.ipynb
