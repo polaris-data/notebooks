@@ -15,6 +15,8 @@ No `POLARIS_API_KEY` is required. Open datasets use a short window ending at the
 
 Historical event methods in the current SDK return single-pass iterators by default. The examples consume those iterators inside the client context with explicit row caps, or request `output="dataframe"` when a method supports the columnar path.
 
+The notebooks share a small helper module, `notebooks/_polaris.py`, that holds the common catalog-window, iterator-capping, and event-timestamp utilities used across all six examples.
+
 ## Notebook Overview
 
 ### [`notebooks/hyperliquid_btc_trade_analysis.ipynb`](notebooks/hyperliquid_btc_trade_analysis.ipynb)
@@ -65,6 +67,7 @@ Checks all six documented PropAMM sources, selects a comparable directed token p
 ```text
 .
 ├── notebooks/
+│   ├── _polaris.py
 │   ├── aevo_btc_options_surface_analysis.ipynb
 │   ├── hyperliquid_btc_trade_analysis.ipynb
 │   ├── hyperliquid_l4_post_trade_analysis.ipynb
